@@ -1,0 +1,17 @@
+function multiples(number) {
+  var sum = []
+  var total = 0
+  for(let i=0; i<number; i++) {
+
+    if(i % 5 === 0) {
+      sum.push(i)
+    } else if(i % 3 === 0) {
+      sum.push(i)
+    }
+  }
+  for(let i=0; i<sum.length; i++){
+    total += sum[i]
+  }
+ return total
+}
+multiples(1000)
